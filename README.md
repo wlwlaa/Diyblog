@@ -28,6 +28,6 @@ blog/blogger/<author-id>/ - информация об авторе и списо
 blog/<blog-id>/ - сведения о блоге
 blog/bloggers/ - список блогеров
 blog/<blog-id>/create/ - создать комментарий для публикации
-accounts/<standart urls>/ - стандартная аутентификация django
+accounts/<standart-urls>/ - стандартная аутентификация django
 blog/create/ - создать публикацию
 ```
