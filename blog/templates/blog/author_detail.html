@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Автор {{ author.user.username }}</h1>
+
+  <h3> Описание </h3>
+  <p> {{ author.summary }}</p>
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4> Публикации: </h4>
+
+    {% if author.user.post_set.all %}
+      {% for post in author.user.post_set.all %}
+      <li>
+        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a> ({{ post.date_of_post }})
+      </li>
+      {% endfor %}
+    {% else %}
+      <p>Публикации отсутствуют</p>
+    {% endif %}
+  </div>
+{% endblock %}

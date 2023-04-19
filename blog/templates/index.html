@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Домашняя страница блога</h1>
+
+<h2>Информация</h2>
+
+  <p>Статистика сайта:</p>
+  <ul>
+    <li><strong>Количество авторов на сайте:</strong> {{ num_of_authors }}</li>
+    <li><strong>Общее количество постов:</strong> {{ num_of_posts }}</li>
+    <p></p>
+    <li><strong>Постов за сегодня:</strong> {{ num_today_posts }}</li>
+    <li><strong>Комментариев за сегодня:</strong> {{ num_today_comms }}</li>
+  </ul>
+
+{% endblock %}
